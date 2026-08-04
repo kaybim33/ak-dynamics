@@ -1,44 +1,88 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-gray-900">
+      {/* Navigation */}
+      <header className="bg-blue-950 text-white">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
+          <a href="#" className="text-2xl font-bold">
+            A&amp;K Dynamics
+          </a>
+
+          <nav className="hidden items-center gap-6 md:flex">
+            <a href="#services" className="hover:text-green-300">
+              Services
+            </a>
+
+            <a href="#about" className="hover:text-green-300">
+              About
+            </a>
+
+            <a href="#contact" className="hover:text-green-300">
+              Contact
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/abimbola-adeyemi/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-green-300"
+            >
+              LinkedIn
+            </a>
+          </nav>
+        </div>
+      </header>
+
       {/* Hero Section */}
-      <section className="bg-blue-900 py-20 text-white">
+      <section className="bg-blue-900 py-24 text-white">
         <div className="mx-auto max-w-6xl px-6">
-          <h1 className="mb-6 text-5xl font-bold">
-            A&amp;K Dynamics LLC
+          <p className="mb-4 text-lg font-semibold text-green-300">
+            Data Quality and Microsoft Business Solutions
+          </p>
+
+          <h1 className="mb-6 max-w-4xl text-5xl font-bold leading-tight md:text-6xl">
+            Helping Businesses Trust Their Data
           </h1>
 
-          <p className="mb-6 text-2xl">
-            Helping Businesses Trust Their Data
+          <p className="max-w-3xl text-lg leading-8 text-blue-100">
+            A&amp;K Dynamics LLC helps organizations clean inaccurate data,
+            remove duplicate records, improve Microsoft Dynamics 365,
+            organize Dataverse, and build Power BI reports that support
+            better business decisions.
           </p>
 
-          <p className="max-w-3xl text-lg leading-8">
-            We help businesses clean inaccurate data, remove duplicate
-            records, improve Microsoft Dynamics 365, organize Dataverse,
-            and build Power BI reports that support better decisions.
-          </p>
+          <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+            <a
+              href="#contact"
+              className="inline-block rounded-lg bg-green-500 px-8 py-4 text-center text-lg font-semibold text-white hover:bg-green-600"
+            >
+              Get a FREE Data Health Check
+            </a>
 
-          <a
-            href="#contact"
-            className="mt-10 inline-block rounded-lg bg-green-500 px-8 py-4 text-lg font-semibold text-white hover:bg-green-600"
-          >
-            Get a FREE Data Health Check
-          </a>
+            <a
+              href="tel:+18169159221"
+              className="inline-block rounded-lg border border-white px-8 py-4 text-center text-lg font-semibold text-white hover:bg-white hover:text-blue-900"
+            >
+              Call (816) 915-9221
+            </a>
+          </div>
         </div>
       </section>
 
       {/* Services Section */}
-      <section className="py-20">
+      <section id="services" className="py-20">
         <div className="mx-auto max-w-6xl px-6">
+          <p className="mb-3 text-center font-semibold text-blue-700">
+            What We Do
+          </p>
+
           <h2 className="mb-12 text-center text-4xl font-bold">
             Our Services
           </h2>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             <div className="rounded-xl border border-gray-200 p-6 shadow-lg">
-              <h3 className="mb-4 text-xl font-bold">
-                Data Cleanup
-              </h3>
+              <h3 className="mb-4 text-xl font-bold">Data Cleanup</h3>
 
               <p className="leading-7 text-gray-600">
                 Remove duplicate records, correct errors, standardize
@@ -47,20 +91,16 @@ export default function Home() {
             </div>
 
             <div className="rounded-xl border border-gray-200 p-6 shadow-lg">
-              <h3 className="mb-4 text-xl font-bold">
-                Dynamics 365
-              </h3>
+              <h3 className="mb-4 text-xl font-bold">Dynamics 365</h3>
 
               <p className="leading-7 text-gray-600">
-                Improve your CRM forms, views, processes, customer records,
+                Improve CRM forms, views, processes, customer records,
                 reporting, and daily business operations.
               </p>
             </div>
 
             <div className="rounded-xl border border-gray-200 p-6 shadow-lg">
-              <h3 className="mb-4 text-xl font-bold">
-                Dataverse
-              </h3>
+              <h3 className="mb-4 text-xl font-bold">Dataverse</h3>
 
               <p className="leading-7 text-gray-600">
                 Build and manage secure business tables, relationships,
@@ -69,9 +109,7 @@ export default function Home() {
             </div>
 
             <div className="rounded-xl border border-gray-200 p-6 shadow-lg">
-              <h3 className="mb-4 text-xl font-bold">
-                Power BI
-              </h3>
+              <h3 className="mb-4 text-xl font-bold">Power BI</h3>
 
               <p className="leading-7 text-gray-600">
                 Create interactive dashboards, KPI reports, and clear
@@ -82,44 +120,95 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
-      <section className="bg-gray-50 py-20">
+      {/* About Section */}
+      <section id="about" className="bg-gray-50 py-20">
+        <div className="mx-auto grid max-w-6xl gap-12 px-6 md:grid-cols-2">
+          <div>
+            <p className="mb-3 font-semibold text-blue-700">
+              About A&amp;K Dynamics
+            </p>
+
+            <h2 className="mb-6 text-4xl font-bold">
+              Practical Data Solutions for Growing Organizations
+            </h2>
+
+            <p className="mb-5 leading-8 text-gray-600">
+              We help organizations improve data quality, simplify business
+              processes, and create reports they can trust.
+            </p>
+
+            <p className="leading-8 text-gray-600">
+              Our services support businesses using Excel, Microsoft
+              Dynamics 365, Dataverse, Power BI, SQL Server, and other
+              business systems.
+            </p>
+          </div>
+
+          <div className="rounded-xl bg-white p-8 shadow-lg">
+            <h3 className="mb-4 text-2xl font-bold">Meet the Founder</h3>
+
+            <p className="mb-2 text-xl font-semibold">
+              Abimbola Adeyemi
+            </p>
+
+            <p className="mb-5 text-blue-700">
+              Founder and Data Solutions Consultant
+            </p>
+
+            <p className="mb-6 leading-7 text-gray-600">
+              Abimbola helps organizations improve data integrity,
+              optimize Microsoft Dynamics 365, organize Dataverse solutions,
+              and develop meaningful Power BI reports.
+            </p>
+
+            <a
+              href="https://www.linkedin.com/in/abimbola-adeyemi/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block rounded-lg bg-blue-700 px-6 py-3 font-semibold text-white hover:bg-blue-800"
+            >
+              View Abimbola&apos;s LinkedIn
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="py-20">
         <div className="mx-auto max-w-6xl px-6">
           <h2 className="mb-12 text-center text-4xl font-bold">
             Why Choose A&amp;K Dynamics?
           </h2>
 
           <div className="grid gap-8 md:grid-cols-3">
-            <div className="rounded-xl bg-white p-6 shadow">
-              <h3 className="mb-3 text-xl font-bold">
-                Reliable Data
-              </h3>
+            <div className="rounded-xl bg-gray-50 p-7 shadow">
+              <h3 className="mb-3 text-xl font-bold">Reliable Data</h3>
 
               <p className="leading-7 text-gray-600">
-                We help you reduce errors and build confidence in the
-                information your organization uses every day.
+                Reduce errors and build confidence in the information your
+                organization uses every day.
               </p>
             </div>
 
-            <div className="rounded-xl bg-white p-6 shadow">
+            <div className="rounded-xl bg-gray-50 p-7 shadow">
               <h3 className="mb-3 text-xl font-bold">
                 Practical Solutions
               </h3>
 
               <p className="leading-7 text-gray-600">
-                We focus on solutions that save time, improve reporting,
-                and make business processes easier to manage.
+                Save time, improve reporting, and make business processes
+                easier to manage.
               </p>
             </div>
 
-            <div className="rounded-xl bg-white p-6 shadow">
+            <div className="rounded-xl bg-gray-50 p-7 shadow">
               <h3 className="mb-3 text-xl font-bold">
                 Personalized Support
               </h3>
 
               <p className="leading-7 text-gray-600">
-                Every organization is different. We take time to understand
-                your needs and recommend the right solution.
+                We take time to understand your needs and recommend solutions
+                that fit your organization.
               </p>
             </div>
           </div>
@@ -134,20 +223,17 @@ export default function Home() {
           </h2>
 
           <p className="mb-10 text-center leading-7 text-gray-600">
-            Complete the form below and we will contact you to discuss
-            your data cleanup, reporting, Dynamics 365, or Dataverse needs.
+            Complete the form below and we will contact you to discuss your
+            data cleanup, reporting, Dynamics 365, or Dataverse needs.
           </p>
 
           <form
             action="https://formspree.io/f/maqrzrqa"
             method="POST"
-            className="space-y-6"
+            className="space-y-6 rounded-xl bg-white p-8 shadow-lg"
           >
             <div>
-              <label
-                htmlFor="name"
-                className="mb-2 block font-semibold"
-              >
+              <label htmlFor="name" className="mb-2 block font-semibold">
                 Full Name
               </label>
 
@@ -157,15 +243,12 @@ export default function Home() {
                 name="name"
                 required
                 placeholder="Enter your full name"
-                className="w-full rounded-lg border border-gray-300 bg-white p-4"
+                className="w-full rounded-lg border border-gray-300 p-4"
               />
             </div>
 
             <div>
-              <label
-                htmlFor="company"
-                className="mb-2 block font-semibold"
-              >
+              <label htmlFor="company" className="mb-2 block font-semibold">
                 Company Name
               </label>
 
@@ -174,15 +257,12 @@ export default function Home() {
                 type="text"
                 name="company"
                 placeholder="Enter your company name"
-                className="w-full rounded-lg border border-gray-300 bg-white p-4"
+                className="w-full rounded-lg border border-gray-300 p-4"
               />
             </div>
 
             <div>
-              <label
-                htmlFor="email"
-                className="mb-2 block font-semibold"
-              >
+              <label htmlFor="email" className="mb-2 block font-semibold">
                 Email Address
               </label>
 
@@ -192,15 +272,12 @@ export default function Home() {
                 name="email"
                 required
                 placeholder="Enter your email address"
-                className="w-full rounded-lg border border-gray-300 bg-white p-4"
+                className="w-full rounded-lg border border-gray-300 p-4"
               />
             </div>
 
             <div>
-              <label
-                htmlFor="phone"
-                className="mb-2 block font-semibold"
-              >
+              <label htmlFor="phone" className="mb-2 block font-semibold">
                 Phone Number
               </label>
 
@@ -209,15 +286,12 @@ export default function Home() {
                 type="tel"
                 name="phone"
                 placeholder="Enter your phone number"
-                className="w-full rounded-lg border border-gray-300 bg-white p-4"
+                className="w-full rounded-lg border border-gray-300 p-4"
               />
             </div>
 
             <div>
-              <label
-                htmlFor="system"
-                className="mb-2 block font-semibold"
-              >
+              <label htmlFor="system" className="mb-2 block font-semibold">
                 What system do you currently use?
               </label>
 
@@ -242,10 +316,7 @@ export default function Home() {
             </div>
 
             <div>
-              <label
-                htmlFor="service"
-                className="mb-2 block font-semibold"
-              >
+              <label htmlFor="service" className="mb-2 block font-semibold">
                 What service do you need?
               </label>
 
@@ -259,30 +330,21 @@ export default function Home() {
                   Select a service
                 </option>
                 <option value="Data Cleanup">Data Cleanup</option>
-                <option value="Duplicate Removal">
-                  Duplicate Removal
-                </option>
+                <option value="Duplicate Removal">Duplicate Removal</option>
                 <option value="Dynamics 365 Support">
                   Dynamics 365 Support
                 </option>
-                <option value="Dataverse Solution">
-                  Dataverse Solution
-                </option>
+                <option value="Dataverse Solution">Dataverse Solution</option>
                 <option value="Power BI Dashboard">
                   Power BI Dashboard
                 </option>
-                <option value="Data Migration">
-                  Data Migration
-                </option>
+                <option value="Data Migration">Data Migration</option>
                 <option value="Other">Other</option>
               </select>
             </div>
 
             <div>
-              <label
-                htmlFor="message"
-                className="mb-2 block font-semibold"
-              >
+              <label htmlFor="message" className="mb-2 block font-semibold">
                 Tell Us About Your Project
               </label>
 
@@ -292,7 +354,7 @@ export default function Home() {
                 rows={6}
                 required
                 placeholder="Describe your data problem or project"
-                className="w-full rounded-lg border border-gray-300 bg-white p-4"
+                className="w-full rounded-lg border border-gray-300 p-4"
               />
             </div>
 
@@ -305,7 +367,7 @@ export default function Home() {
           </form>
 
           {/* Contact Information */}
-          <div className="mt-14 rounded-xl bg-white p-8 text-center shadow">
+          <div className="mt-12 rounded-xl bg-white p-8 text-center shadow">
             <h3 className="mb-6 text-2xl font-bold">
               Contact Information
             </h3>
@@ -313,10 +375,10 @@ export default function Home() {
             <p className="mb-4">
               <strong>Email:</strong>{" "}
               <a
-                href="mailto:akdynamicsllc.us@gmail.com"
+                href="mailto:info@ak-dynamics.com"
                 className="text-blue-700 hover:underline"
               >
-                akdynamicsllc.us@gmail.com
+                info@ak-dynamics.com
               </a>
             </p>
 
@@ -330,6 +392,30 @@ export default function Home() {
               </a>
             </p>
 
+            <p className="mb-4">
+              <strong>Website:</strong>{" "}
+              <a
+                href="https://ak-dynamics.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-700 hover:underline"
+              >
+                ak-dynamics.com
+              </a>
+            </p>
+
+            <p className="mb-4">
+              <strong>LinkedIn:</strong>{" "}
+              <a
+                href="https://www.linkedin.com/in/abimbola-adeyemi/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-700 hover:underline"
+              >
+                Abimbola Adeyemi
+              </a>
+            </p>
+
             <p>
               <strong>Location:</strong> Fortville, Indiana, USA
             </p>
@@ -338,10 +424,45 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-blue-950 py-8 text-center text-white">
-        <p>
-          © 2026 A&amp;K Dynamics LLC. All rights reserved.
-        </p>
+      <footer className="bg-blue-950 py-10 text-white">
+        <div className="mx-auto max-w-6xl px-6 text-center">
+          <h2 className="mb-3 text-2xl font-bold">
+            A&amp;K Dynamics LLC
+          </h2>
+
+          <p className="mb-6 text-blue-200">
+            Data Cleanup • Dynamics 365 • Dataverse • Power BI
+          </p>
+
+          <div className="mb-6 flex flex-wrap justify-center gap-5">
+            <a
+              href="mailto:info@ak-dynamics.com"
+              className="hover:text-green-300"
+            >
+              Email
+            </a>
+
+            <a
+              href="tel:+18169159221"
+              className="hover:text-green-300"
+            >
+              Phone
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/abimbola-adeyemi/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-green-300"
+            >
+              LinkedIn
+            </a>
+          </div>
+
+          <p className="text-sm text-blue-200">
+            © 2026 A&amp;K Dynamics LLC. All rights reserved.
+          </p>
+        </div>
       </footer>
     </main>
   );
