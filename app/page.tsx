@@ -122,7 +122,7 @@ export default function Home() {
       <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
           <a href="#" className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-700 text-sm font-black text-white shadow-sm">
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-blue-700 via-indigo-600 to-cyan-500 text-sm font-black text-white shadow-lg shadow-blue-200/70">
               A&amp;K
             </div>
             <div>
@@ -150,7 +150,7 @@ export default function Home() {
             </a>
             <a
               href="#contact"
-              className="rounded-lg bg-blue-700 px-5 py-2.5 font-bold text-white shadow-sm transition hover:bg-blue-800"
+              className="rounded-xl bg-gradient-to-r from-blue-700 to-indigo-600 px-5 py-2.5 font-bold text-white shadow-md shadow-blue-200 transition hover:-translate-y-0.5 hover:shadow-lg"
             >
               Free Consultation
             </a>
@@ -158,7 +158,7 @@ export default function Home() {
 
           <a
             href="#contact"
-            className="rounded-lg bg-blue-700 px-4 py-2 text-sm font-bold text-white md:hidden"
+            className="rounded-xl bg-gradient-to-r from-blue-700 to-indigo-600 px-4 py-2 text-sm font-bold text-white md:hidden"
           >
             Contact
           </a>
@@ -166,48 +166,48 @@ export default function Home() {
       </header>
 
       {/* Hero */}
-      <section className="relative overflow-hidden border-b border-slate-100 bg-gradient-to-b from-slate-50 to-white">
-        <div className="absolute -right-28 -top-28 h-96 w-96 rounded-full bg-cyan-100/60 blur-3xl" />
-        <div className="absolute -left-28 bottom-0 h-80 w-80 rounded-full bg-blue-100/50 blur-3xl" />
+      <section className="relative overflow-hidden border-b border-slate-100 bg-gradient-to-br from-blue-50 via-white to-cyan-50">
+        <div className="absolute -right-24 -top-24 h-96 w-96 rounded-full bg-violet-200/35 blur-3xl" />
+        <div className="absolute -left-24 bottom-0 h-80 w-80 rounded-full bg-cyan-200/45 blur-3xl" />
 
-        <div className="relative mx-auto grid max-w-7xl items-center gap-14 px-6 py-20 lg:grid-cols-[1.05fr_.95fr] lg:px-8 lg:py-28">
+        <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 py-16 lg:grid-cols-[1.12fr_.88fr] lg:px-8 lg:py-20">
           <div>
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-100 bg-white px-4 py-2 text-sm font-bold text-blue-700 shadow-sm">
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-blue-100 bg-white/90 px-4 py-2 text-sm font-bold text-blue-700 shadow-sm">
               <span className="h-2 w-2 rounded-full bg-cyan-500" />
-              Practical technology solutions for growing organizations
+              Data • Microsoft Solutions • Professional Websites
             </div>
 
-            <h1 className="max-w-3xl text-4xl font-black leading-[1.08] tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
+            <h1 className="max-w-3xl text-4xl font-black leading-[1.1] tracking-tight text-slate-950 sm:text-5xl lg:text-[3.45rem]">
               Better systems.
-              <span className="block text-blue-700">Cleaner data.</span>
+              <span className="block bg-gradient-to-r from-blue-700 via-indigo-600 to-cyan-500 bg-clip-text text-transparent">Cleaner data.</span>
               <span className="block">A stronger digital presence.</span>
             </h1>
 
-            <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-600">
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
               A&amp;K Dynamics LLC helps organizations improve Microsoft
               Dynamics 365, clean and organize business data, build useful
               Power BI reporting, and create professional websites.
             </p>
 
-            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               <a
                 href="#contact"
-                className="rounded-lg bg-blue-700 px-7 py-3.5 text-center font-bold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-blue-800"
+                className="rounded-xl bg-gradient-to-r from-blue-700 via-indigo-600 to-violet-600 px-7 py-3.5 text-center font-extrabold text-white shadow-lg shadow-blue-200/70 transition hover:-translate-y-0.5 hover:shadow-xl"
               >
                 Start a Conversation
               </a>
               <a
                 href="#services"
-                className="rounded-lg border border-slate-300 bg-white px-7 py-3.5 text-center font-bold text-slate-800 shadow-sm transition hover:border-blue-300 hover:text-blue-700"
+                className="rounded-xl border border-slate-300 bg-white/90 px-7 py-3.5 text-center font-bold text-slate-800 shadow-sm transition hover:border-blue-300 hover:bg-white hover:text-blue-700"
               >
-                View Our Services
+                Explore Our Services
               </a>
             </div>
 
-            <div className="mt-9 flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold text-slate-500">
+            <div className="mt-7 flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold text-slate-600">
               {["Dynamics 365", "Dataverse", "Power BI", "Web Design"].map((item) => (
                 <span key={item} className="flex items-center gap-2">
-                  <span className="text-teal-600">✓</span>
+                  <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-[11px] font-black text-emerald-700">✓</span>
                   {item}
                 </span>
               ))}
@@ -215,16 +215,15 @@ export default function Home() {
           </div>
 
           {/* Clean capability panel */}
-          <div className="relative">
-            <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_20px_70px_-25px_rgba(15,23,42,0.20)] sm:p-8">
-              <div className="mb-7">
-                <p className="text-xs font-black uppercase tracking-[0.2em] text-blue-700">
-                  What we help improve
-                </p>
-                <h2 className="mt-2 text-2xl font-black text-slate-950">
-                  Technology that supports your organization
-                </h2>
+          <div className="relative lg:max-w-md lg:justify-self-end">
+            <div className="absolute -inset-5 rounded-[2rem] bg-gradient-to-br from-blue-200/50 via-violet-200/30 to-cyan-200/50 blur-2xl" />
+            <div className="relative overflow-hidden rounded-3xl border border-white bg-white/95 shadow-[0_24px_70px_-25px_rgba(30,64,175,0.35)]">
+              <div className="bg-gradient-to-r from-blue-700 via-indigo-600 to-cyan-500 px-6 py-5 text-white">
+                <p className="text-xs font-black uppercase tracking-[0.2em] text-blue-100">A&amp;K Solutions</p>
+                <h2 className="mt-2 text-xl font-black">Technology that supports your organization</h2>
               </div>
+              <div className="p-6">
+              
 
               <div className="space-y-4">
                 {[
@@ -234,9 +233,9 @@ export default function Home() {
                 ].map(([number, title, text]) => (
                   <div
                     key={number}
-                    className="flex items-center gap-4 rounded-2xl border border-slate-100 bg-slate-50 p-4"
+                    className="flex items-center gap-4 rounded-2xl border border-slate-100 bg-slate-50/80 p-4 transition hover:border-blue-100 hover:bg-white hover:shadow-md"
                   >
-                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-700 text-sm font-black text-white">
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-blue-700 to-indigo-600 text-sm font-black text-white shadow-sm">
                       {number}
                     </div>
                     <div>
@@ -247,14 +246,14 @@ export default function Home() {
                 ))}
               </div>
 
-              <div className="mt-6 rounded-2xl bg-blue-50 p-5">
+              <div className="mt-6 rounded-2xl border border-blue-100 bg-gradient-to-r from-blue-50 to-cyan-50 p-5">
                 <p className="text-sm font-bold text-blue-900">
-                  One partner for data, Microsoft business systems, reporting,
-                  and web solutions.
+                  One partner for data, Microsoft business systems, reporting, web design, and website management.
                 </p>
               </div>
             </div>
           </div>
+        </div>
         </div>
       </section>
 
@@ -300,13 +299,13 @@ export default function Home() {
             {services.map((service) => (
               <article
                 key={service.title}
-                className="group rounded-2xl border border-slate-200 bg-white p-7 transition duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-xl"
+                className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-gradient-to-br from-white to-slate-50/60 p-7 shadow-sm transition duration-300 hover:-translate-y-1.5 hover:border-blue-200 hover:shadow-2xl"
               >
                 <div className="flex items-start justify-between gap-4">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-50 text-blue-700">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-50 to-cyan-50 text-blue-700 ring-1 ring-blue-100">
                     <Icon name={service.icon} />
                   </div>
-                  <span className="rounded-full bg-slate-100 px-3 py-1 text-[10px] font-black tracking-[0.14em] text-slate-500">
+                  <span className="rounded-full bg-gradient-to-r from-indigo-50 to-cyan-50 px-3 py-1 text-[10px] font-black tracking-[0.14em] text-indigo-700">
                     {service.label}
                   </span>
                 </div>
@@ -323,7 +322,7 @@ export default function Home() {
       </section>
 
       {/* Industries */}
-      <section id="industries" className="border-y border-slate-100 bg-slate-50 py-20 lg:py-24">
+      <section id="industries" className="border-y border-slate-100 bg-gradient-to-br from-slate-50 via-blue-50/40 to-cyan-50/50 py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-[.85fr_1.15fr] lg:items-center">
             <div>
@@ -343,9 +342,9 @@ export default function Home() {
               {industries.map((industry) => (
                 <div
                   key={industry}
-                  className="flex items-center gap-3 rounded-xl border border-slate-200 bg-white px-5 py-4 shadow-sm"
+                  className="flex items-center gap-3 rounded-2xl border border-white bg-white/90 px-5 py-4 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
                 >
-                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-teal-50 text-sm font-black text-teal-700">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-100 to-blue-100 text-sm font-black text-blue-700">
                     ✓
                   </span>
                   <span className="font-bold text-slate-800">{industry}</span>
@@ -374,7 +373,7 @@ export default function Home() {
               ["02", "Build & Improve", "We clean, configure, design, develop, or optimize the solution that fits your needs."],
               ["03", "Support", "We provide a clear handoff and can continue supporting your data, systems, reporting, or website."],
             ].map(([number, title, text]) => (
-              <div key={number} className="rounded-2xl border border-slate-200 p-7">
+              <div key={number} className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                 <p className="text-sm font-black tracking-[0.18em] text-blue-700">
                   {number}
                 </p>
@@ -388,8 +387,22 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Color CTA */}
+      <section className="px-6 pb-20 lg:px-8 lg:pb-24">
+        <div className="relative mx-auto max-w-7xl overflow-hidden rounded-3xl bg-gradient-to-r from-blue-700 via-indigo-600 to-violet-600 px-7 py-10 text-white shadow-2xl shadow-blue-200 sm:px-10 lg:flex lg:items-center lg:justify-between lg:px-12">
+          <div className="absolute -right-16 -top-16 h-56 w-56 rounded-full bg-cyan-400/20 blur-2xl" />
+          <div className="relative max-w-2xl">
+            <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-200">Ready to improve your organization?</p>
+            <h2 className="mt-3 text-3xl font-black tracking-tight sm:text-4xl">Let’s turn your next technology challenge into a practical solution.</h2>
+          </div>
+          <a href="#contact" className="relative mt-7 inline-flex rounded-xl bg-white px-7 py-3.5 font-extrabold text-blue-800 shadow-lg transition hover:-translate-y-0.5 hover:bg-cyan-50 lg:mt-0">
+            Request a Free Consultation
+          </a>
+        </div>
+      </section>
+
       {/* About */}
-      <section id="about" className="bg-slate-950 py-20 text-white lg:py-24">
+      <section id="about" className="bg-gradient-to-br from-slate-950 via-blue-950 to-indigo-950 py-20 text-white lg:py-24">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-[1.1fr_.9fr] lg:items-center lg:px-8">
           <div>
             <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-300">
@@ -416,7 +429,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="rounded-2xl border border-white/10 bg-white/[0.05] p-7 sm:p-8">
+          <div className="rounded-3xl border border-white/10 bg-white/[0.07] p-7 shadow-2xl backdrop-blur sm:p-8">
             <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-300">
               Founder
             </p>
@@ -451,7 +464,7 @@ export default function Home() {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="bg-slate-50 py-20 lg:py-24">
+      <section id="contact" className="bg-gradient-to-br from-slate-50 via-white to-blue-50 py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-[.8fr_1.2fr]">
             <div>
@@ -499,7 +512,7 @@ export default function Home() {
                     Phone
                   </p>
                   <p className="mt-1 font-bold text-slate-950">
-                    (816) 915-9221
+                    +1 (816) 915-9221
                   </p>
                 </a>
               </div>
@@ -512,8 +525,14 @@ export default function Home() {
             <form
               action="https://formspree.io/f/maqrzrqa"
               method="POST"
-              className="rounded-2xl border border-slate-200 bg-white p-7 shadow-lg sm:p-9"
+              className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-7 shadow-xl sm:p-9"
             >
+              <div className="absolute inset-x-0 top-0 h-1.5 bg-gradient-to-r from-blue-600 via-indigo-500 to-cyan-500" />
+              <div className="mb-7">
+                <h3 className="text-2xl font-black text-slate-950">Request a free consultation</h3>
+                <p className="mt-2 text-sm leading-6 text-slate-500">Share a few details about what you need and we’ll get back to you.</p>
+              </div>
+
               <div className="grid gap-5 md:grid-cols-2">
                 <div>
                   <label htmlFor="name" className="mb-2 block text-sm font-bold text-slate-700">
@@ -634,7 +653,7 @@ export default function Home() {
 
               <button
                 type="submit"
-                className="mt-6 w-full rounded-lg bg-blue-700 px-8 py-4 text-base font-extrabold text-white shadow-md transition hover:bg-blue-800"
+                className="mt-6 w-full rounded-xl bg-gradient-to-r from-blue-700 via-indigo-600 to-violet-600 px-8 py-4 text-base font-extrabold text-white shadow-lg shadow-blue-200 transition hover:-translate-y-0.5 hover:shadow-xl"
               >
                 Request a Free Consultation
               </button>
@@ -652,7 +671,7 @@ export default function Home() {
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-7 px-6 md:flex-row md:items-center lg:px-8">
           <div>
             <div className="flex items-center gap-3">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-700 text-xs font-black text-white">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-blue-700 via-indigo-600 to-cyan-500 text-xs font-black text-white shadow-md">
                 A&amp;K
               </div>
               <div>
