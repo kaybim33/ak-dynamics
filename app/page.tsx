@@ -1,3 +1,5 @@
+import DataPlanner from "./components/data-planner";
+
 const services = [
   {
     title: "Data Cleanup & Quality",
@@ -253,6 +255,7 @@ export default function Home() {
 
           <nav className="hidden items-center gap-7 text-sm font-bold md:flex">
             <a href="#services" className="transition hover:text-blue-950">Services</a>
+            <a href="#data-planner" className="transition hover:text-blue-950">Data Planner</a>
             <a href="#why-us" className="transition hover:text-blue-950">Why A&amp;K</a>
             <a href="#industries" className="transition hover:text-blue-950">Who We Help</a>
             <a href="#about" className="transition hover:text-blue-950">About</a>
@@ -525,6 +528,8 @@ export default function Home() {
       </section>
 
       {/* Services */}
+      <DataPlanner />
+
       <section id="services" className="border-y border-slate-100 bg-slate-50 py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
