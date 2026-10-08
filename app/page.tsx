@@ -1,6 +1,47 @@
 import DataPlanner from "./components/data-planner";
 
 const services = [
+  
+  {
+    title: "Custom Software & Business Applications",
+    short: "SOFTWARE",
+    description:
+      "Build custom business applications, financial workflow systems, and internal management platforms using Python, Django, and PostgreSQL.",
+    bullets: [
+      "Python & Django development",
+      "Loan management applications",
+      "Approval workflow automation",
+      "Enterprise dashboards",
+    ],
+    icon: "code",
+  },
+  {
+    title: "Database & Cloud Solutions",
+    short: "DATABASE",
+    description:
+      "Design, manage, migrate, back up, and restore business databases using PostgreSQL, SQL, and cloud technologies.",
+    bullets: [
+      "PostgreSQL administration",
+      "Database backup & restoration",
+      "Cloud deployment",
+      "Database migration",
+    ],
+    icon: "database",
+  },
+  {
+    title: "Corporate IT Training",
+    short: "TRAINING",
+    description:
+      "Provide practical technology training to help employees improve their digital skills, reporting, and productivity.",
+    bullets: [
+      "Microsoft 365 & Excel",
+      "Power BI & SQL training",
+      "Python programming",
+      "AI workplace productivity",
+    ],
+    icon: "education",
+  },
+
   {
     title: "Data Cleanup & Quality",
     short: "DATA QUALITY",
@@ -85,6 +126,22 @@ const industries = [
 ];
 
 const examples = [
+  
+  {
+    label: "FINANCIAL SOFTWARE",
+    title: "Loan Management & Financial Operations Platform",
+    text:
+      "Developed a custom financial operations application using Python, Django, and PostgreSQL. The platform supports loan applications, customer records, multi-level approval workflows, repayment management, and staff access controls.",
+    points: [
+      "Loan applications and customer management",
+      "Multi-level loan approval workflows",
+      "Daily, weekly, and monthly loan calculations",
+      "Repayment tracking and financial records",
+      "Role-based staff access and permissions",
+      "PostgreSQL database and cloud deployment",
+    ],
+  },
+
   {
     label: "CRM & DATA",
     title: "CRM Data Quality & Cleanup",
@@ -294,18 +351,25 @@ export default function Home() {
             </h1>
 
             <p className="mt-7 max-w-2xl text-lg font-medium leading-8 text-cyan-50">
-              A&amp;K Dynamics LLC helps churches, nonprofits, associations,
-              businesses, and professional organizations improve data quality,
-              Microsoft Dynamics 365, Dataverse, Power BI reporting, web design,
-              and website management.
+              
+A&amp;K Dynamics LLC provides custom software development,
+custom business dashboards and workflow automation, database administration,
+Microsoft Dynamics 365, Power BI reporting, cloud solutions,
+corporate IT training, and website development for businesses,
+financial institutions, nonprofits, and organizations.
+
             </p>
 
             <div className="mt-8 space-y-4">
               {[
-                "Clean, reliable CRM and business data",
-                "Microsoft Dynamics 365 and Dataverse support",
-                "Power BI dashboards and business reporting",
-                "Professional website design, redesign, and management",
+                
+"Custom software and business application development",
+"Interactive dashboards and workflow automation",
+"Python, Django, PostgreSQL and cloud solutions",
+"Microsoft Dynamics 365, Power BI and database services",
+"Corporate IT training and technical support",
+"Professional website development and management",
+
               ].map((item) => (
                 <div key={item} className="flex items-start gap-3">
                   <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-cyan-300 text-sm font-black text-cyan-950">
@@ -416,6 +480,29 @@ export default function Home() {
                 >
                   <option value="" disabled>Select a service</option>
                   <option value="Data Cleanup">Data Cleanup</option>
+                  
+<option value="Custom Software Development">
+  Custom Software Development
+</option>
+<option value="Loan Management Software">
+  Loan Management Software
+</option>
+<option value="Financial Dashboard Development">
+  Financial Dashboard Development
+</option>
+<option value="Python & Django Development">
+  Python & Django Development
+</option>
+<option value="PostgreSQL Database Services">
+  PostgreSQL Database Services
+</option>
+<option value="Corporate IT Training">
+  Corporate IT Training
+</option>
+<option value="Cloud Deployment & Migration">
+  Cloud Deployment & Migration
+</option>
+
                   <option value="Duplicate Removal">Duplicate Removal</option>
                   <option value="Dynamics 365 Support">Dynamics 365 Support</option>
                   <option value="Dataverse Solution">Dataverse Solution</option>
@@ -707,6 +794,73 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+{/* Custom Dashboard Development */}
+<section className="bg-slate-950 py-20 text-white">
+  <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <div className="mx-auto max-w-3xl text-center">
+      <p className="text-sm font-bold uppercase tracking-widest text-cyan-300">
+        Custom Software Solutions
+      </p>
+
+      <h2 className="mt-4 text-3xl font-black sm:text-4xl">
+        Business Dashboards & Workflow Automation
+      </h2>
+
+      <p className="mt-6 text-lg leading-8 text-slate-300">
+        We develop customized business applications and dashboards
+        that help organizations manage records, automate approvals,
+        monitor operations, and improve productivity.
+      </p>
+    </div>
+
+    <div className="mt-12 grid gap-6 md:grid-cols-3">
+      {[
+        {
+          title: "Business Management Dashboards",
+          text: "Manage customers, employees, projects, and daily operations in one place.",
+        },
+        {
+          title: "Workflow Automation",
+          text: "Automate application reviews, approvals, and business processes.",
+        },
+        {
+          title: "Database & Cloud Applications",
+          text: "Build applications using Python, Django, PostgreSQL, and cloud technologies.",
+        },
+      ].map((item) => (
+        <div
+          key={item.title}
+          className="rounded-2xl border border-cyan-500/20 bg-white/10 p-7"
+        >
+          <h3 className="text-xl font-bold text-cyan-300">
+            {item.title}
+          </h3>
+          <p className="mt-4 leading-7 text-slate-300">
+            {item.text}
+          </p>
+        </div>
+      ))}
+    </div>
+
+    <div className="mt-10 text-center">
+      <a
+        href="#contact"
+        className="inline-block rounded-lg bg-orange-500 px-8 py-4 font-bold text-white hover:bg-orange-600"
+      >
+        Request a Custom Dashboard
+      </a>
+      
+<a
+  href="/demo-dashboard"
+  className="mt-4 inline-block rounded-lg border-2 border-cyan-400 px-8 py-4 font-bold text-cyan-300 transition hover:bg-cyan-400 hover:text-slate-950 sm:ml-4 sm:mt-0"
+>
+  View Dashboard Demo →
+</a>
+
+    </div>
+  </div>
+</section>
 
       {/* Capability metrics */}
       <section className="bg-gradient-to-r from-cyan-500 via-cyan-500 to-blue-600 text-white">
