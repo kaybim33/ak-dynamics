@@ -61,6 +61,67 @@ export default function DemoDashboard() {
           ))}
         </div>
 
+{/* Business Performance Chart */}
+<div className="mt-8 rounded-xl bg-white p-6 shadow">
+  <h2 className="text-xl font-bold">
+    Business Performance Overview
+  </h2>
+
+  <p className="mt-2 text-sm text-slate-500">
+    Project status distribution — sample data
+  </p>
+
+  <div className="mt-8 space-y-6">
+    {[
+      {
+        label: "Completed Projects",
+        count: projects.filter(
+          (p) => p.status === "Completed"
+        ).length,
+        color: "bg-green-500",
+      },
+      {
+        label: "Projects In Progress",
+        count: projects.filter(
+          (p) => p.status === "In Progress"
+        ).length,
+        color: "bg-blue-500",
+      },
+      {
+        label: "Pending Projects",
+        count: projects.filter(
+          (p) => p.status === "Pending"
+        ).length,
+        color: "bg-orange-500",
+      },
+    ].map((item) => (
+      <div key={item.label}>
+        <div className="mb-2 flex justify-between">
+          <span className="font-semibold">
+            {item.label}
+          </span>
+          <span className="font-bold">
+            {item.count}
+          </span>
+        </div>
+
+        <div className="h-4 overflow-hidden rounded-full bg-slate-200">
+          <div
+            className={`h-full rounded-full ${item.color}`}
+            style={{
+              width: `${
+                projects.length > 0
+                  ? (item.count / projects.length) * 100
+                  : 0
+              }%`,
+            }}
+          />
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
         <div className="mt-8 rounded-xl bg-white p-6 shadow">
           <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
             <h2 className="text-xl font-bold">Project Management</h2>
