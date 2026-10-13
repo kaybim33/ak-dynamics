@@ -1005,14 +1005,14 @@ financial institutions, nonprofits, and organizations.
               </a>
 
               <a
-                href="mailto:akdynamicsllc.us@gmail.com"
+                href="mailto:abi@ak-dynamics.com"
                 className="block rounded-xl border border-cyan-100 bg-white p-5 shadow-sm transition hover:shadow-md"
               >
                 <p className="text-xs font-black uppercase tracking-[0.15em] text-cyan-700">
-                  Gmail
+                  Abi Adeyemi — Direct Email
                 </p>
                 <p className="mt-1 break-words font-extrabold text-slate-950">
-                  akdynamicsllc.us@gmail.com
+                  abi@ak-dynamics.com
                 </p>
               </a>
 
@@ -1199,7 +1199,7 @@ financial institutions, nonprofits, and organizations.
               <p className="font-black text-white">Contact</p>
               <div className="mt-4 space-y-2.5 text-sm text-slate-400">
                 <p>info@ak-dynamics.com</p>
-                <p>akdynamicsllc.us@gmail.com</p>
+                <p>abi@ak-dynamics.com</p>
                 <p>+1(816) 915-9221</p>
               
               </div>
