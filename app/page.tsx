@@ -1,6 +1,14 @@
 import DataPlanner from "./components/data-planner";
 
 const services = [
+  {
+    title: "AI Training for Beginners",
+    short: "AI TRAINING",
+    description:
+      "Learn to use ChatGPT and other AI tools for work, business, and everyday tasks with practical, step-by-step lessons. No IT background or coding experience needed.",
+    bullets: ["AI basics & effective prompts", "Writing, research & presentations", "Career-focused practice projects", "Checking accuracy & protecting privacy"],
+    icon: "education",
+  },
   
   {
     title: "Custom Software & Business Applications",
@@ -310,8 +318,9 @@ export default function Home() {
             </div>
           </a>
 
-          <nav className="hidden items-center gap-7 text-sm font-bold md:flex">
+          <nav className="hidden items-center gap-4 text-sm font-bold lg:gap-6 md:flex">
             <a href="#services" className="transition hover:text-blue-950">Services</a>
+            <a href="#ai-training" className="transition hover:text-blue-950">Learn AI</a>
             <a href="#data-planner" className="transition hover:text-blue-950">Data Planner</a>
             <a href="#why-us" className="transition hover:text-blue-950">Why A&amp;K</a>
             <a href="#industries" className="transition hover:text-blue-950">Who We Help</a>
@@ -479,6 +488,7 @@ financial institutions, nonprofits, and organizations.
                   className="w-full rounded-lg border border-slate-300 bg-slate-50 px-4 py-3 outline-none transition focus:border-cyan-500 focus:bg-white focus:ring-4 focus:ring-cyan-100"
                 >
                   <option value="" disabled>Select a service</option>
+                  <option value="AI Training for Beginners">AI Training for Beginners</option>
                   <option value="Data Cleanup">Data Cleanup</option>
                   
 <option value="Custom Software Development">
@@ -885,6 +895,53 @@ financial institutions, nonprofits, and organizations.
         </div>
       </section>
 
+
+      {/* AI Training */}
+      <section id="ai-training" className="scroll-mt-28 bg-[#eef9fa] py-20 lg:py-24">
+        <div className="mx-auto grid max-w-7xl items-center gap-10 px-6 lg:grid-cols-2 lg:px-8">
+          <div>
+            <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-700">AI Training by A&amp;K Dynamics LLC</p>
+            <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">Learn AI with Abi</h2>
+            <p className="mt-5 text-lg leading-8 text-slate-600">
+              New to AI? Start with the basics and learn how to use ChatGPT and other AI tools
+              for work, business, and everyday tasks. No IT background or coding experience needed.
+            </p>
+            <p className="mt-4 leading-7 text-slate-600">
+              Build confidence through guided practice and examples tailored to your interests.
+              Explore how AI can support tasks in different careers, and create practical projects
+              that demonstrate what you have learned.
+            </p>
+            <a
+              href="mailto:info@ak-dynamics.com?subject=AI%20Training%20Inquiry&amp;body=Hi%20Abi%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20beginner%20AI%20classes."
+              className="mt-7 inline-flex rounded-lg bg-orange-500 px-7 py-4 text-center font-extrabold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-orange-600"
+            >
+              Ask About AI Classes
+            </a>
+            <p className="mt-3 text-sm leading-6 text-slate-500">Contact Abi to discuss your goals, lesson options, availability, and pricing.</p>
+          </div>
+          <div className="rounded-2xl border border-cyan-100 bg-white p-7 shadow-xl sm:p-9">
+            <h3 className="text-2xl font-black text-slate-950">What you will learn</h3>
+            <ul className="mt-6 space-y-5">
+              {[
+                ["Understand AI", "Learn what AI can do, where it falls short, and when to use it."],
+                ["Write better prompts", "Give clear instructions, add context, and refine the results."],
+                ["Apply AI to everyday work", "Practice writing, research, presentations, and simple data tasks."],
+                ["Use AI responsibly", "Check accuracy, recognize limitations, and protect confidential information."],
+                ["Build practical skills", "Complete guided activities connected to your interests and career goals."],
+              ].map(([title, description]) => (
+                <li key={title} className="flex items-start gap-3">
+                  <span aria-hidden="true" className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-cyan-100 font-black text-cyan-800">✓</span>
+                  <div>
+                    <h4 className="font-extrabold text-slate-900">{title}</h4>
+                    <p className="mt-1 text-sm leading-6 text-slate-600">{description}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* About */}
       <section id="about" className="bg-slate-950 py-20 text-white lg:py-24">
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 lg:grid-cols-[1fr_1fr] lg:px-8">
@@ -1134,6 +1191,7 @@ financial institutions, nonprofits, and organizations.
                   className="w-full rounded-lg border border-slate-300 bg-slate-50 px-4 py-3.5 outline-none transition focus:border-cyan-500 focus:bg-white focus:ring-4 focus:ring-cyan-100"
                 >
                   <option value="" disabled>Select a service</option>
+                  <option value="AI Training for Beginners">AI Training for Beginners</option>
                   <option value="Data Cleanup">Data Cleanup</option>
                   <option value="Duplicate Removal">Duplicate Removal</option>
                   <option value="Dynamics 365 Support">Dynamics 365 Support</option>
