@@ -320,7 +320,7 @@ export default function Home() {
 
           <nav className="hidden items-center gap-4 text-sm font-bold lg:gap-6 md:flex">
             <a href="#services" className="transition hover:text-blue-950">Services</a>
-            <a href="#ai-training" className="transition hover:text-blue-950">Learn AI</a>
+            <a href="/ai-training" className="transition hover:text-blue-950">AI Training</a>
             <a href="#data-planner" className="transition hover:text-blue-950">Data Planner</a>
             <a href="#why-us" className="transition hover:text-blue-950">Why A&amp;K</a>
             <a href="#industries" className="transition hover:text-blue-950">Who We Help</a>
@@ -333,6 +333,7 @@ export default function Home() {
             </a>
           </nav>
 
+          <a href="/ai-training" className="text-sm font-bold md:hidden">AI Training</a>
           <a
             href="#contact"
             className="rounded-lg bg-orange-500 px-4 py-2 text-sm font-bold text-white shadow md:hidden"
@@ -912,10 +913,10 @@ financial institutions, nonprofits, and organizations.
               that demonstrate what you have learned.
             </p>
             <a
-              href="mailto:info@ak-dynamics.com?subject=AI%20Training%20Inquiry&amp;body=Hi%20Abi%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20beginner%20AI%20classes."
+              href="/ai-training"
               className="mt-7 inline-flex rounded-lg bg-orange-500 px-7 py-4 text-center font-extrabold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-orange-600"
             >
-              Ask About AI Classes
+              Explore AI Training
             </a>
             <p className="mt-3 text-sm leading-6 text-slate-500">Contact Abi to discuss your goals, lesson options, availability, and pricing.</p>
           </div>
