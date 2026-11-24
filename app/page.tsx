@@ -321,6 +321,7 @@ export default function Home() {
           <nav className="hidden items-center gap-4 text-sm font-bold lg:gap-6 md:flex">
             <a href="#services" className="transition hover:text-blue-950">Services</a>
             <a href="/ai-training" className="transition hover:text-blue-950">AI Training</a>
+            <a href="/academy" className="transition hover:text-blue-950">Kids Academy</a>
             <a href="#data-planner" className="transition hover:text-blue-950">Data Planner</a>
             <a href="#why-us" className="transition hover:text-blue-950">Why A&amp;K</a>
             <a href="#industries" className="transition hover:text-blue-950">Who We Help</a>
@@ -333,7 +334,7 @@ export default function Home() {
             </a>
           </nav>
 
-          <a href="/ai-training" className="text-sm font-bold md:hidden">AI Training</a>
+          <div className="flex flex-wrap items-center gap-3 md:hidden"><a href="/ai-training" className="text-sm font-bold">AI Training</a><a href="/academy" className="text-sm font-bold">Kids Academy</a></div>
           <a
             href="#contact"
             className="rounded-lg bg-orange-500 px-4 py-2 text-sm font-bold text-white shadow md:hidden"
@@ -1034,6 +1035,18 @@ financial institutions, nonprofits, and organizations.
           >
             Request a Free Consultation
           </a>
+        </div>
+      </section>
+
+      {/* Young Tech Innovators Academy */}
+      <section className="bg-gradient-to-br from-cyan-50 to-blue-50 py-16">
+        <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-7 px-6 lg:flex-row lg:items-center lg:px-8">
+          <div>
+            <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-700">New educational initiative</p>
+            <h2 className="mt-3 text-3xl font-black text-slate-950 sm:text-4xl">A&amp;K Young Tech Innovators Academy</h2>
+            <p className="mt-4 max-w-2xl text-lg leading-8 text-slate-700">Weekly IT, coding, and AI classes for learners ages 4 and above. Explore our age-based curriculum and three-month learning levels.</p>
+          </div>
+          <a href="/academy" className="shrink-0 rounded-lg bg-orange-500 px-7 py-4 text-center font-extrabold text-white shadow-lg transition hover:bg-orange-600">Explore the Academy</a>
         </div>
       </section>
 
